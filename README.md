@@ -5,3 +5,10 @@ This project provides a basic notes service using MongoDB.
 - Basic settings for MongoDB connection.
 - Connection module that connects to MongoDB lazily.
 - Basic note model with fields: title, content, tags, and created_at.
+
+
+## Maintainer
+
+**NazimAgent**  
+Designed and maintained by **Abdennacer El.**  
+GitHub: `github.com/elbasri`
