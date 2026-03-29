@@ -1,7 +1,7 @@
 # Notes Service Mongo
-## Running the Application
-1. Activate the virtual environment: `source D:\wrk\git\agentic\agenticvenv\Scripts\activate`
-2. Run the application: `uvicorn src.main:app --reload`
+This project provides a basic notes service using MongoDB.
 
-## Running Tests
-Run tests using pytest: `pytest`
+## Features
+- Basic settings for MongoDB connection.
+- Connection module that connects to MongoDB lazily.
+- Basic note model with fields: title, content, tags, and created_at.
