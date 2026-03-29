@@ -1,0 +1,22 @@
+from repositories.note_repository import NoteRepository
+
+class NoteService:
+    def __init__(self, repository):
+        self.repository = repository
+
+    def create_note(self, title, content, tags):
+        normalized_tags = [tag.strip().lower() for tag in tags]
+        return self.repository.create(title, content, normalized_tags)
+
+    def get_notes(self):
+        return self.repository.get_all()
+
+    def update_note(self, note_id, title=None, content=None, tags=None):
+        if tags:
+            normalized_tags = [tag.strip().lower() for tag in tags]
+        else:
+            normalized_tags = None
+        return self.repository.update(note_id, title, content, normalized_tags)
+
+    def delete_note(self, note_id):
+        return self.repository.delete(note_id)
