@@ -79,3 +79,9 @@ Start the application using Docker Compose:
 - Ensure MongoDB is running and accessible.
 - Check environment variables for correct configuration.
 - Review logs for any errors or warnings.
+
+
+## Maintainer
+
+**Abdennacer Elbasri**  
+GitHub: `github.com/elbasri`
